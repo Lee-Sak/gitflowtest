@@ -5,9 +5,10 @@ import { OrderController } from './order/order.controller';
 import { OrderModule } from './order/order.module';
 import { ClaimModule } from './claim/claim.module';
 import { ClaimController } from './claim/claim.controller';
+import { RefundModule } from './refund/refund.module';
 
 @Module({
-  imports: [OrderModule, ClaimModule],
+  imports: [OrderModule, ClaimModule, RefundModule],
   controllers: [AppController, OrderController, ClaimController],
   providers: [AppService],
 })
